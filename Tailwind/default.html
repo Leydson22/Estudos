@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 50px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+
+.header {
+  padding: 50px; /* Mantém o espaçamento interno do header */
+  text-align: center; /* Centraliza o texto */
+  color: white; /* Cor do texto no header */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Sombra para o texto para melhorar a leitura */
+
+  /* --- PROPRIEDADES DA IMAGEM DE FUNDO --- */
+  background-image: url('Imagens/aeronave.jpg'); /* Define a imagem de fundo */
+  background-size: cover; /* Ajusta a imagem para cobrir todo o header */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  background-position: center; /* Centraliza a imagem no header */
+  background-color: #1abc9c; /* Cor de fallback caso a imagem não carregue ou para um efeito de overlay */
+  /* -------------------------------------- */
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: DarkCyan;
+  text-shadow: 5px 5px 5px White;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  }
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: Teal ;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: DarkCyan;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: darkseagreen;
+  padding: 20px;
+  padding: auto;
+  border: 12px solid darkseagreen; 
+  display: darkseagreen;
+  border-radius: 15px;
+  color: darkgreen;
+  
+}
+
+
+
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 2px;
+  text-align: center;
+  background: rgb(21, 22, 22);
+  color: white
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body style="background-color: darkcyan;">
+
+<!-- <div style="background:darkcyan;padding:5px"> -->
+  
+</div>
+
+<!-- Header -->
+<div class="header">
+    <h1 style="color: white;   text-align:center; text-shadow: 5px 5px 5px black; font-size: 50px;">CENTRO OESTE AIRPORT</h1>
+  <h1>My Website </h1>
+  <p>With a <b>flexible</b> layout.</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#">COA</a>
+  <a href="#">EQUIPE DE OPERAÇÕES</a>
+  <a href="#">ARQUIVOS</a>
+  <a href="#">CURIOSIDADES</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main" >
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Dec 7, 2024</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+        <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2024</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
+
+
